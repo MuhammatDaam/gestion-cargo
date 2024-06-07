@@ -1,0 +1,92 @@
+ Voici une structure de projet professionnelle avec TypeScript, PHP, Tailwind CSS et HTML qui respecte les bonnes pratiques de développement :
+
+```
+gestion-cargaison/
+├── app/
+│   ├── Controllers/
+│   │   ├── CargoController.php
+│   │   ├── ClientController.php
+│   │   └── PackageController.php
+│   ├── Models/
+│   │   ├── Cargo.php
+│   │   ├── Client.php
+│   │   └── Package.php
+│   ├── Views/
+│   │   ├── cargo/
+│   │   │   ├── create.php
+│   │   │   ├── index.php
+│   │   │   └── search.php
+│   │   ├── client/
+│   │   │   ├── create.php
+│   │   │   └── index.php
+│   │   ├── package/
+│   │   │   ├── create.php
+│   │   │   ├── index.php
+│   │   │   └── tracking.php
+│   │   ├── layouts/
+│   │   │   ├── app.php
+│   │   │   └── guest.php
+│   │   ├── components/
+│   │   │   ├── forms/
+│   │   │   │   ├── CargoForm.php
+│   │   │   │   ├── ClientForm.php
+│   │   │   │   └── PackageForm.php
+│   │   │   └── ui/
+│   │   │       ├── Button.php
+│   │   │       ├── Card.php
+│   │   │       └── Table.php
+│   │   └── index.php
+│   └── Utils/
+│       ├── Database.php
+│       └── Helpers.php
+├── public/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── app.css
+│   │   ├── js/
+│   │   │   └── app.ts
+│   │   └── images/
+│   │       └── logo.png
+│   ├── index.php
+│   └── .htaccess
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+└── composer.json
+```
+
+Voici une explication détaillée de la structure :
+
+- `app/` : Ce dossier contient le code PHP de l'application.
+  - `Controllers/` : Contient les contrôleurs de l'application.
+  - `Models/` : Contient les modèles de données de l'application.
+  - `Views/` : Contient les vues de l'application.
+    - `cargo/`, `client/`, `package/` : Chaque dossier contient les vues liées à une fonctionnalité spécifique.
+    - `layouts/` : Contient les mises en page globales de l'application.
+    - `components/` : Contient des composants réutilisables.
+      - `forms/` : Contient des composants de formulaires.
+      - `ui/` : Contient des composants d'interface utilisateur.
+  - `Utils/` : Contient des utilitaires et des helpers réutilisables.
+
+- `public/` : Ce dossier contient les fichiers accessibles depuis le web.
+  - `assets/` : Contient les ressources statiques de l'application.
+    - `css/` : Contient les fichiers CSS compilés à partir de Tailwind CSS.
+    - `js/` : Contient les fichiers JavaScript/TypeScript de l'application.
+    - `images/` : Contient les images de l'application.
+  - `index.php` : Le point d'entrée de l'application.
+  - `.htaccess` : Fichier de configuration Apache pour la réécriture d'URL.
+
+- `tailwind.config.js` : Fichier de configuration de Tailwind CSS.
+- `tsconfig.json` : Fichier de configuration de TypeScript.
+- `package.json` : Fichier de configuration de Node.js pour les dépendances et les scripts.
+- `composer.json` : Fichier de configuration de Composer pour les dépendances PHP.
+
+Dans cette structure, vous pouvez développer votre application en PHP dans le dossier `app/`. Les vues sont séparées par fonctionnalité, et vous pouvez créer des composants réutilisables dans `app/Views/components/`.
+
+Le code TypeScript se trouve dans `public/assets/js/`. Vous pouvez importer et utiliser vos fichiers TypeScript dans vos vues PHP en les incluant dans des balises `<script>`.
+
+Les fichiers CSS sont générés à partir de Tailwind CSS et stockés dans `public/assets/css/`. Vous pouvez inclure ces fichiers CSS dans vos vues PHP.
+
+Les images et autres ressources statiques sont stockées dans `public/assets/images/`.
+
+Cette structure vous permet de séparer clairement les préoccupations et de maintenir une organisation propre de votre code. Vous pouvez adapter cette structure en fonction de vos besoins spécifiques.

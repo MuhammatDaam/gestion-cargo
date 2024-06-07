@@ -1,0 +1,32 @@
+{
+  "name": "projetscript",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i tailwind/main.css -o public/tailwind.css --watch & tsc --watch",
+    "dev": "lite-server & tsc --watch & tailwindcss -i tailwind/main.css -o public/tailwind.css --watch ",
+    "pro": "lite-server",
+    "watch": "watch \"npm run build\" ./dist"
+  },
+  "keywords": [
+    "ts",
+    "js",
+    "correction"
+  ],
+  "author": "TheCustomer",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "daisyui": "^4.11.1",
+    "lite-server": "^2.6.1",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/chart.js": "^2.9.41",
+    "@types/google.maps": "^3.55.9",
+    "chart.js": "^4.4.3"
+  },
+  "description": ""
+}
